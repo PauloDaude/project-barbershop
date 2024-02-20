@@ -8,7 +8,7 @@ import {
   StarIcon
 } from 'lucide-react';
 import Image from 'next/image';
-import BarbershopInfo from './_components/barbershop-items';
+import BarbershopInfo from './_components/barbershop-info';
 import ServiceItem from './_components/service-items';
 
 interface BarbershopDetailsPageProps {
