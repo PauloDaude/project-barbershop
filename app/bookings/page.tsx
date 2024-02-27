@@ -11,18 +11,32 @@ const BookingsPage = async () => {
 
   if (!session?.user) redirect('/');
 
-  const bookings = await db.booking.findMany({
-    where: {
-      userId: (session.user as any).id
-    },
-    include: {
-      service: true,
-      barbershop: true
-    }
-  });
-
-  const confirmedBooking = bookings.filter(booking => isFuture(booking.date));
-  const finishedBooking = bookings.filter(booking => isPast(booking.date));
+  const [confirmedBookings, finishedBookings] = await Promise.all([
+    db.booking.findMany({
+      where: {
+        userId: (session.user as any).id,
+        date: {
+          gte: new Date()
+        }
+      },
+      include: {
+        service: true,
+        barbershop: true
+      }
+    }),
+    db.booking.findMany({
+      where: {
+        userId: (session.user as any).id,
+        date: {
+          lt: new Date()
+        }
+      },
+      include: {
+        service: true,
+        barbershop: true
+      }
+    })
+  ]);
 
   return (
     <>
@@ -33,7 +47,7 @@ const BookingsPage = async () => {
           Confirmados
         </h2>
         <div className="flex flex-col gap-3">
-          {confirmedBooking.map(booking => (
+          {confirmedBookings.map(booking => (
             <BookingItem key={booking.id} booking={booking} />
           ))}
         </div>
@@ -42,7 +56,7 @@ const BookingsPage = async () => {
           Finalizados
         </h2>
         <div className="flex flex-col gap-3">
-          {finishedBooking.map(booking => (
+          {finishedBookings.map(booking => (
             <BookingItem key={booking.id} booking={booking} />
           ))}
         </div>
