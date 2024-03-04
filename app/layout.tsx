@@ -23,9 +23,7 @@ export default function RootLayout({
         <AuthProvider>
           <div className="flex-1">{children}</div>
           <Toaster />
-          <footer>
-            <Footer />
-          </footer>
+          <Footer />
         </AuthProvider>
       </body>
     </html>
