@@ -2,14 +2,14 @@
 
 Esse projeto consiste no desenvolvimento de um site para barbearias com o objetivo do usuário poder agendar os serviços desejados. Esse projeto foi desenvolvido durante o evento de uma semana, chamado FSW Barber, ministrado pelo tutor Felipe Mota Rocha.
 
-![Página Inicial](https://i.imgur.com/V3X00LE.jpeg)
-![Página da Barbearia](https://i.imgur.com/pO7y5Ek.jpeg)
-![Agendar Horário](https://i.imgur.com/NeqloHI.jpeg)
-![Página de Agendamentos](https://i.imgur.com/CIyHHuP.jpeg)
-
 ## Projeto no Ar 🌐
 
 Veja como está a aplicação você mesmo através do link: https://project-barbershop-sigma.vercel.app/
+
+- [Página Inicial](https://i.imgur.com/V3X00LE.jpeg)
+- [Página da Barbearia](https://i.imgur.com/pO7y5Ek.jpeg)
+- [Agendar Horário](https://i.imgur.com/NeqloHI.jpeg)
+- [Página de Agendamentos](https://i.imgur.com/CIyHHuP.jpeg)
 
 ## Tecnologias Utilizadas 🚀
 
