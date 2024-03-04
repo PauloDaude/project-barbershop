@@ -6,10 +6,10 @@ Esse projeto consiste no desenvolvimento de um site para barbearias com o objeti
 
 Veja como está a aplicação você mesmo através do link: https://project-barbershop-sigma.vercel.app/
 
-- [Página Inicial](https://i.imgur.com/V3X00LE.jpeg)
-- [Página da Barbearia](https://i.imgur.com/pO7y5Ek.jpeg)
-- [Agendar Horário](https://i.imgur.com/NeqloHI.jpeg)
-- [Página de Agendamentos](https://i.imgur.com/CIyHHuP.jpeg)
+- [Página Inicial](https://i.imgur.com/V3X00LE.jpeg){:target="\_blank"}
+- [Página da Barbearia](https://i.imgur.com/pO7y5Ek.jpeg){:target="\_blank"}
+- [Agendar Horário](https://i.imgur.com/NeqloHI.jpeg){:target="\_blank"}
+- [Página de Agendamentos](https://i.imgur.com/CIyHHuP.jpeg){:target="\_blank"}
 
 ## Tecnologias Utilizadas 🚀
 
