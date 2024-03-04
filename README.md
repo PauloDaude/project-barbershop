@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Web App para Barbearias ✂️
+Esse projeto consiste no desenvolvimento de um site para barbearias com o objetivo do usuário poder agendar os serviços desejados. Esse projeto foi desenvolvido durante o evento de uma semana, chamado FSW Barber, ministrado pelo tutor Felipe Mota Rocha.
 
-First, run the development server:
+![Página Inicial](https://imgur.com/V3X00LE)
+![Página da Barbearia](https://imgur.com/pO7y5Ek)
+![Agendar Horário](https://imgur.com/NeqloHI)
+![Página de Agendamentos](https://imgur.com/CIyHHuP)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Projeto no Ar 🌐
+Veja como está a aplicação você mesmo através do link: https://project-barbershop-sigma.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas 🚀
+- React: Uma biblioteca JavaScript popular para construir interfaces de usuário interativas.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 13: Um framework React que oferece renderização do lado do servidor (SSR), geração estática (SSG), entre muitos outros recursos.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next Auth: Biblioteca para autenticação de usuários com OAuth.
 
-## Learn More
+- Postgres: Um sistema de gerenciamento de banco de dados relacional.
 
-To learn more about Next.js, take a look at the following resources:
+- Prisma: Um ORM (Object-Relational Mapping) para Node.js e TypeScript.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- shadcn/ui: Uma biblioteca de componentes de IU reutilizáveis e estilizáveis.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Tailwind CSS: Um framework CSS que oferece várias classes para utilização já pré-estilizadas.
 
-## Deploy on Vercel
+## Funcionalidades 📦
+- Sistema de agendamento: O usuário tem o poder de agendar o serviço na barbearia que deseja, assim como também pode ver os agendamentos já finalizados, na página de agendamentos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Login com o Google: Permitimos que os usuários façam login usando suas contas do Google para uma experiência de autenticação simplificada.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Pesquisa por barbearia: Para simplificar a busca por uma barbearia preferida do usuário, foi feito uma barra de pesquisa, para que o usuário encontre de forma fácil e rápida a barbearia.
+
+## Aprendizados 📝
+Com o desenvolvimento desse projeto Full Stack, adquiri conhecimentos novos que serão de grande utilidade nos próximos desafios, como:
+
+- Framework [Next.js](https://nextjs.org/): Fui apresentado a esse framework incrível que é o Next. Para quem utilizava apenas o React puro nas aplicações, o Next.js se torna uma grande ajuda para o desenvolvedor, alinhado com o TypeScript também. A utilização do Next agiliza bastante o desenvolvimento, deixa a aplicação mais rápida e segura.
+
+- ORM [Prisma](https://www.prisma.io/): Meu primeiro contato com o Prisma também, outra tecnologia que me surpreendeu, possui com uma implementação simplificada que agiliza muito, poupa tempo com a construção de Schema e consultas no banco, o que antes era feito de forma separada, pelo back-end, agora com o Prisma pode ser feita consultas no banco de forma fácil e rápida e integrada no próprio front-end.
+
+- Biblioteca [shadcn/ui](https://ui.shadcn.com/): Essa biblioteca me espantou quando entendi como funcionava, pois possui muitas interfaces modernas e atuais para aplicações minimalistas. A instalação é apenas um prompt no terminal, funciona como módulos, portanto você escolhe qual componente usar, instalando apenas ele. Os componentes são totalmentes personalizáveis, para que você possa deixar da forma que queira.
